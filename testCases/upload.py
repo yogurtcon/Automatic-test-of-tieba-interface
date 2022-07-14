@@ -1,7 +1,5 @@
 import unittest
-import sys
-sys.path.append('../public')
-from common import *
+from public.common import *
 
 
 class Mytest(unittest.TestCase):

@@ -2,17 +2,16 @@
 import unittest
 from HTMLTestRunner import HTMLTestRunner
 import time
-import sys
-sys.path.append('贴吧接口自动化/public')
+
 
 if __name__ == "__main__":
     #定义测试用例的存放路径
-    test_dir = "贴吧接口自动化/testCases/"
+    test_dir = "testCases/"
     #把测试用例加入 discover 容器
     discover = unittest.defaultTestLoader.discover(test_dir,"*.py")
 
     #定义测试报告的存放路径
-    testReportDir = "贴吧接口自动化/reports/"
+    testReportDir = "reports/"
     #定义测试报告的名字
     nowTime = time.strftime("%Y-%m-%d%H%M%S", time.localtime())
     fileName = nowTime+".html"
